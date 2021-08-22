@@ -1,0 +1,32 @@
+#html {
+  height: 100%;
+  width: auto;
+  display: grid;
+}
+#body {
+  display: grid;
+  grid-template-rows: 0.25fr 3fr 0.25fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  place-items: stretch;
+  grid-template-areas:
+    ". . . "
+    ". table ."
+    ". . .";
+}
+#container {
+  grid-area: table;
+  display: grid;
+  align-items: stretch;
+  /*  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);*/
+}
+.gridDiv {
+  display: grid;
+  background-color: aquamarine;
+  border-color: black;
+  grid-column: auto;
+  grid-row: auto;
+}
+.Hover {
+  background-color: purple;
+}
